@@ -1,0 +1,61 @@
+/*
+.calculator {
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows:auto;
+    grid-template-areas:
+    "display display display display"
+    "ops     ops     ops     ops"
+    "789     789     789     calculate"
+    "456     456     456     calculate"
+    "123     123     123     calculate"
+    "0dotclear 0dotclear 0dotclear calculate";
+}
+*/
+.keys {
+    display:grid;
+    background-color:red;
+    color:blue;
+    width:250px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "ops     ops     ops     ops"
+    "sev     sev     sev     calc"
+    "four    four    four    calc"
+    "one     one     one     calc"
+    "zero    zero    zero    calc";
+    
+}
+
+.key {
+    background-color:blue;
+    color: white;
+    height: 50px;
+    width: 50px;
+    
+   
+}
+
+.ops{
+    grid-area: ops;
+}
+.sev{
+    grid-area: sev;
+}
+.four{
+    grid-area: four;
+}
+.one{
+    grid-area:one;
+}
+.zero{
+    grid-area:zero;
+}
+
+.equal{
+    grid-area:calc;
+    justify-self:stretch;
+    grid-row: 2/ span 4;
+    
+}
